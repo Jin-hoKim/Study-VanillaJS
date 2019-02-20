@@ -1,23 +1,21 @@
 const title = document.querySelector("#title");
 
-const BASE_COLOR = "rgb(52, 73, 94)";
-const OTHER_COLOR = "rgb(127, 140, 141)";
+const CLICKED_CLASS = "clicked";
 
 function title_mouseEventHandler(event)
 {
-  // console.log(title.style.color);
-  const currentColor = title.style.color;
-  if( currentColor == BASE_COLOR )
-    title.style.color = OTHER_COLOR;
-  else
-    title.style.color = BASE_COLOR;
+  const currentClassName = title.className;
+  // if( !title.classList.contains(CLICKED_CLASS) )
+  //   title.classList.add(CLICKED_CLASS);
+  // else
+  //   title.classList.remove(CLICKED_CLASS);
+
+  title.classList.toggle(CLICKED_CLASS);
 }
 
 function init()
 {
-  title.style.color = BASE_COLOR;
-  // title.addEventListener("click", title_mouseEventHandler);
-  title.addEventListener("mouseenter", title_mouseEventHandler);
+  title.addEventListener("click", title_mouseEventHandler);
 }
 
 init();
