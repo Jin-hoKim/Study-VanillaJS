@@ -53,4 +53,9 @@ console.log( `plus: ${calculator.plus(5,2)},\nminus: ${calculator.minus(5,2)},\n
 
 const title = document.getElementById("title");
 title.innerHTML = "Hello, JS (from JS)";
+title.style.color = "red";
 console.log( title );
+console.dir( title );
+
+const title2 = document.querySelector("#title");
+title2.innerHTML = "Hello2";
