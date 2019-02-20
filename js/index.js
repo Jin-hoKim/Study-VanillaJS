@@ -50,3 +50,7 @@ const calculator = {
 }
 
 console.log( `plus: ${calculator.plus(5,2)},\nminus: ${calculator.minus(5,2)},\ndivider: ${calculator.divider(6,3)}` );
+
+const title = document.getElementById("title");
+title.innerHTML = "Hello, JS (from JS)";
+console.log( title );
