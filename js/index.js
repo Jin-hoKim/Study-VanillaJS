@@ -26,6 +26,14 @@ function sayHello( name )
 
 sayHello("JHK");
 
+// js - function return
+function sayHello2( name )
+{
+  return `Hello, ${name}!!`;
+}
+
+console.log(sayHello2("JHK"));
+
 
 
 // console.log( arrDays );
