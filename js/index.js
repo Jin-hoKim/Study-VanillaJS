@@ -34,6 +34,19 @@ function sayHello2( name )
 
 console.log(sayHello2("JHK"));
 
+const calculator = {
+  plus: function(a,b)
+  {
+    return a + b;
+  },
+  minus: function(a,b)
+  {
+    return a-b;
+  },
+  divider: function(a,b)
+  {
+    return a/b;
+  }
+}
 
-
-// console.log( arrDays );
+console.log( `plus: ${calculator.plus(5,2)},\nminus: ${calculator.minus(5,2)},\ndivider: ${calculator.divider(6,3)}` );
